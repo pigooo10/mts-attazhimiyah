@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+import PopupBanner from './components/PopupBanner';
 
 // Pages
 import Home from './pages/Home';
@@ -32,6 +33,9 @@ function App() {
           </Routes>
         </main>
         <Footer />
+        
+        {/* Global Popup Banner */}
+        <PopupBanner />
       </div>
     </Router>
   );
